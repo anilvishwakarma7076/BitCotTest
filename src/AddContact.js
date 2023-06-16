@@ -21,6 +21,9 @@ const AddContact = () => {
         const {name,value}=e.target;
         setState({...state,[name]:value});
     }
+    const handleReset = () => {
+        setState(initialData);
+    }
     const handleSubmit=(e)=>{
         e.preventDefault();
         const unqid = uuid();
@@ -96,7 +99,7 @@ const AddContact = () => {
                     </Button>
                   
                     <Button
-                      
+                       onClick={handleReset}
                         className="btn-dark px-5 ms-3"
                     >
                     Reset

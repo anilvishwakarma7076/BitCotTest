@@ -17,6 +17,9 @@ const EditContact = () => {
     const [state,setState]=useState(initialData);
     const [data, setData] = useState({});
     const { id } = useParams();
+    const handleReset = () => {
+      setState(initialData);
+    };
     useEffect(() => {
         database.ref("Contact_table").on("value", (snapshot) => {
           if (snapshot.val() != null) {
@@ -142,7 +145,7 @@ const EditContact = () => {
                     </Button>
                   
                     <Button
-                      value={" "}
+                     onClick={handleReset}
                         className="btn-dark px-5 ms-3"
                     >
                     Reset

@@ -142,7 +142,7 @@ const EditContact = () => {
                     </Button>
                   
                     <Button
-                      
+                      value={" "}
                         className="btn-dark px-5 ms-3"
                     >
                     Reset

@@ -89,7 +89,7 @@ const EditContact = () => {
             <form
                 onSubmit={handleSubmit}
                 className='container border border-black col-sm-4 mt-4 mb-3 shadow' >
-                <h2 className='text-center text-danger'>Add Contact</h2>
+                <h2 className='text-center text-danger'>Edit Contact</h2>
                 <div>
                     <h6 className='text-danger mt-3'>Name:</h6>
                     <input
